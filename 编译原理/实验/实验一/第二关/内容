@@ -1,0 +1,34 @@
+# 实验目的
+熟悉educoder在线实验环境的使用，学习使用Lex写简单的词法分析程序，会在educoder在线实验环境下使用Flex编写调试Lex写的程序。
+
+在进行本关任务时，请随时查阅《Lex使用指南》。
+
+# 实验要求
+阅读右侧编辑器中的代码和注释，读懂含义并修改该代码，在其基础上，根据表一增加如下记号：
+
+左右大小括号：{ } ( )
+
+将关系算符改写成C中的形式
+
+分号、赋值号：;  =
+
+关键字：if else
+
+双斜线表示的注释：//
+
+算术运算符号：+ - * /
+
+将标识符改为可含有下划线，并且可以以下划线开头
+
+将注释内容忽略
+
+类型	词法记号	类型	词法记号
+标识符	ID	关系运算符	RELOP
+数字	NUM	{	LBRACE
++	PLUS	}	RBRACE
+-	MINUS	(	LPAREN
+*	TIMES	)	RPAREN
+/	DIV	;	SEMICOLON
+=	ASSIGN	if	IF
+do	DO	else	ELSE
+while	WHILE	其他	ERRORCHAR
